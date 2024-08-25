@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./css/style_new.css" />
   </head>
   <body>
-    <header class="page-header hidden">
+    <header class="page-header">
       <div class="container">
         <nav class="page-header-nav">
           <a href="./index.html" class="header-logo logo"
@@ -61,6 +61,77 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="icon-burger-btn" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="modal-close-btn" type="button" data-menu-close>
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li><a class="mobile-menu-nav-link" href="">Studio</a></li>
+              <li><a class="mobile-menu-nav-link" href="">Portfolio</a></li>
+              <li><a class="mobile-menu-nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <address class="mobile-contacts">
+              <ul class="mobile-contacts-list">
+                <li class="mobile-contacts-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-contacts-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mobile-contacts-item">
+                  <a href="tel:+110001111111" class="mobile-contacts-link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="card-team-icons">
+              <li class="card-team-item">
+                <a class="card-team-icons-link" href="">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="card-team-item">
+                <a class="card-team-icons-link" href="">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="card-team-item">
+                <a class="card-team-icons-link" href="">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="card-team-item">
+                <a class="card-team-icons-link" href="">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -318,6 +389,15 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-item-overlay">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio_section4/bank-mob-min.jpg    1x,
+                      ./images/portfolio_section4/bank-mob@2x-min.jpg 2x
+                    "
+                    media="(min-width:1178px)"
+                  />
+                </picture>
                 <img
                   src="./images/banking-app.jpg"
                   alt="banking-app"
@@ -433,7 +513,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer hidden">
+    <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-content">
           <a href="./index.html" class="footer-logo logo"
@@ -501,7 +581,6 @@
     </footer>
 
     <div class="backdrop is-open hidden" data-modal>
-      <!-- is-open -->
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -585,5 +664,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
