@@ -138,7 +138,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="advantages section">
@@ -710,7 +712,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -785,8 +787,10 @@
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="privacy-policy">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="submit-btn" type="submit" data-modal-open>Send</button>
