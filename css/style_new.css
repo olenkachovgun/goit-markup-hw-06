@@ -475,6 +475,7 @@ button {
   color: var(--navy-blue);
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 .advantages-text {
   font-weight: 500;
@@ -615,9 +616,9 @@ button {
     gap: 64px 24px;
     margin: 0 auto;
   }
-  .team-item {
+  /* .team-item {
     width: calc((100% - 24px) / 2);
-  }
+  } */
 }
 /* desk */
 @media screen and (min-width: 1158px) {
@@ -1000,6 +1001,7 @@ button {
   align-self: center;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border-radius: 2px;
